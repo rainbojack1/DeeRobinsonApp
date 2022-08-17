@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -20,22 +19,24 @@ function App() {
   return (
     <Router>
       <Navbar />
-        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/deerobinson" element={<Home />} />
-          <Route path="/about-dee" element={<About />} />
-          <Route path="/upcoming-events" element={<UpcomingEvents />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/films" element={<Films />} />
-          <Route path="/music" element={<Music />} />
-          <Route path="/poetry" element={<Poetry />} />
-          <Route path="/photoGallery" element={<PhotoGallery />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/contact-us" element={<ContactUs />} />
+        <div className="wrapper">
+          <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/deerobinson" element={<Home />} />
+            <Route path="/about-dee" element={<About />} />
+            <Route path="/upcoming-events" element={<UpcomingEvents />} />
+            <Route path="/books" element={<Books />} />
+            <Route path="/films" element={<Films />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/poetry" element={<Poetry />} />
+            <Route path="/photoGallery" element={<PhotoGallery />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/partners" element={<Partners />} />
+            <Route path="/contact-us" element={<ContactUs />} />
 
-          {/* <Route path="*" element={<NotFound />} /> */}
-        </Routes>
+            {/* <Route path="*" element={<NotFound />} /> */}
+          </Routes>
+        </div>
         <Footer />
     </Router>
   );
