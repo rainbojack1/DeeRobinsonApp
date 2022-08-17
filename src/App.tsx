@@ -14,7 +14,7 @@ import Music from './pages/Music/Music';
 import Partners from './pages/Partners/Partners';
 import PhotoGallery from './pages/PhotoGallery/PhotoGallery';
 import Poetry from './pages/Poetry/Poetry';
-import Footer from './pages/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -36,7 +36,6 @@ function App() {
 
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
-     
         <Footer />
     </Router>
   );
