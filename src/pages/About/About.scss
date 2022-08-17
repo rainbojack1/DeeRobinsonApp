@@ -1,1 +1,20 @@
-.About {}
+.About {
+    .section {
+        padding: 80px 0;
+    }
+    .section-header {
+        color: rgb(41, 148, 174);
+        font-size: 30px;
+        max-width: 80%;
+        text-align: center;
+        border-bottom: 1px solid rgb(41, 148, 174);
+        line-height: 0.1em;
+        margin: auto;
+
+        span {
+            padding:0 10px;
+            background-color: white;
+            font-family: 'Cinzel', serif;
+        }
+    }
+}
