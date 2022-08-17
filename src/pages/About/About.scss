@@ -2,6 +2,7 @@
     .section {
         padding: 80px 0;
     }
+    
     .section-header {
         color: rgb(41, 148, 174);
         font-size: 30px;
@@ -10,11 +11,65 @@
         border-bottom: 1px solid rgb(41, 148, 174);
         line-height: 0.1em;
         margin: auto;
+         // margin-bottom: 40px
 
         span {
             padding:0 10px;
             background-color: white;
             font-family: 'Cinzel', serif;
         }
+    }
+
+    .section-content {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    .summary {
+        display: inline-flex;
+        width: 80%;
+        justify-content: space-between;
+
+        .summary-content {
+            margin: 25px;
+            text-align: center;
+        }
+
+        .roundedImg {
+            border-radius: 50%;
+            width: 223px;
+            height: 223px;
+            margin-bottom: 20px;
+        }
+
+        .details {
+            text-align: center;
+
+            .detail-header {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            .detail-text {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .offColor {
+        background-color: rgb(246, 246, 246);
+
+        .section-header span {
+            background-color: rgb(246, 246, 246);
+        }
+    }
+
+    .picSide {
+        max-width: 33.333%;
+    }
+
+    .textSide {
+        max-width: 66.666%;
     }
 }
